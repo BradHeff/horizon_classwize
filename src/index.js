@@ -15,8 +15,6 @@ import { createLogger } from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
 import { BaseReducer } from './Redux/reducer';
 
-import Layout from './HOC/Layout';
-
 const logger = createLogger();
 const rootReducer = combineReducers({ BaseReducer,  });
 const store = createStore(rootReducer, applyMiddleware(thunkMiddleware, logger));
@@ -26,10 +24,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <Provider store={store}>
-        <Layout>
-          <App />
-        </Layout>
+      <Provider store={store}>        
+          <App />        
       </Provider>
     </Router>
   </React.StrictMode>
