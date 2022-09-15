@@ -11,6 +11,7 @@
 .info h3 span {
     color: #FCE300;
     text-shadow: 1px 1px 3px #000000;
+    font-weight: 400;
 }
 
 .info h3 span.active {
@@ -23,9 +24,30 @@
     text-shadow: 1px 1px 3px #000000;
 }
 
+.desc {
+    margin-bottom: 30px;
+}
+
+.desc p {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
 .btn.btn-classwize {
     background: #115740;
     border-color: #115740;
+    color: #fff;
+    border-radius: 20px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn.btn-classwize:hover {
+    background: #209e74;
+    border-color: #209e74;
     color: #fff;
 }
 

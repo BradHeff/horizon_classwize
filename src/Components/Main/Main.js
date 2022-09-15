@@ -8,8 +8,9 @@ const Loading = (e) => {
     var count = 0
     var ints = setInterval(() => {
         count += 1;
-        if(count === 5){
+        if(count === 3){
             classe.toggle('loading')
+            window.location.href = e.target.href
             clearInterval(ints);
         }
     }, 1000);
@@ -30,10 +31,11 @@ const Main = (props) => {
                                 <h1 className='mb-1'>Horizon Classwize</h1>
                             </div>
                             <div className='desc'>
-
+                                <p>Welcome to Classwize jump page. Click the button below to be taken to the login page for Classwize.</p>
+                                <p>Once on the login page, click the Azure button and login with your Horizon email account.</p>
                             </div>
                             <div className='button-cont'>
-                                <a href='#0' className='btn btn-primary px-3 py-2' onClick={Loading}>Login</a>
+                                <a href='https://classroom.au-1.familyzone.io/login/FQIhsyy3SK' className='btn btn-classwize px-3 py-2' onClick={Loading}>Login</a>
                             </div>
                         </div>
                     </div>
