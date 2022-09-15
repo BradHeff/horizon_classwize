@@ -1,86 +1,76 @@
 .info {
     padding: 10px;
     font-weight: 500;
-    text-align: start;    
+    text-align: start;
 }
 
 .info h3 {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .info h3 span {
     color: #FCE300;
+    text-shadow: 1px 1px 3px #000000;
 }
 
 .info h3 span.active {
     color: #5cfc00;
+    text-shadow: 1px 1px 3px #000000;
 }
+
 .info h3 span.offline {
-    color: #fc7100;
+    color: #ff3815;
+    text-shadow: 1px 1px 3px #000000;
 }
 
-
+.btn.btn-classwize {
+    background: #115740;
+    border-color: #115740;
+    color: #fff;
+}
 
 .panel {
-    background-color: rgba(255,199,44,0.3);
+    background-color: rgba(255, 199, 44, 0.3);
     border: none;
     padding: 30px;
-    -webkit-mask-image:
-    linear-gradient(to top, black 0%, black 100%),
-    linear-gradient(to top, transparent 0%, black 100%),
-    linear-gradient(to right, transparent 0%, black 100%),
-    linear-gradient(to bottom, transparent 0%, black 100%),
-    linear-gradient(to left, transparent 0%, black 100%);
-  -webkit-mask-position:
-    center,
-    top,
-    right,
-    bottom,
-    left;
-  -webkit-mask-size:
-    100% 100%,
-    100% 10px,
-    10px 100%,
-    100% 10px,
-    10px 100%;
-  -webkit-mask-repeat:
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat;
-   -webkit-mask-composite:
-    source-out,
-    source-over,
-    source-over,
-    source-over;
-  mask-image:
-    linear-gradient(to top, black 0%, black 100%),
-    linear-gradient(to top, transparent 0%, black 100%),
-    linear-gradient(to right, transparent 0%, black 100%),
-    linear-gradient(to bottom, transparent 0%, black 100%),
-    linear-gradient(to left, transparent 0%, black 100%);
-  mask-position:
-    center,
-    top,
-    right,
-    bottom,
-    left;
-  mask-size:
-    100% 100%,
-    100% 10px,
-    10px 100%,
-    100% 10px,
-    10px 100%;
-  mask-repeat:
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat;
-  mask-composite:
-    subtract,
-    add,
-    add,
-    add;
+    padding-bottom: 60px;
+    -webkit-mask-image: linear-gradient(to top, black 0%, black 100%), linear-gradient(to top, transparent 0%, black 100%), linear-gradient(to right, transparent 0%, black 100%), linear-gradient(to bottom, transparent 0%, black 100%), linear-gradient(to left, transparent 0%, black 100%);
+    -webkit-mask-position: center, top, right, bottom, left;
+    -webkit-mask-size: 100% 100%, 100% 10px, 10px 100%, 100% 10px, 10px 100%;
+    -webkit-mask-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    -webkit-mask-composite: source-out, source-over, source-over, source-over;
+    mask-image: linear-gradient(to top, black 0%, black 100%), linear-gradient(to top, transparent 0%, black 100%), linear-gradient(to right, transparent 0%, black 100%), linear-gradient(to bottom, transparent 0%, black 100%), linear-gradient(to left, transparent 0%, black 100%);
+    mask-position: center, top, right, bottom, left;
+    mask-size: 100% 100%, 100% 10px, 10px 100%, 100% 10px, 10px 100%;
+    mask-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    mask-composite: subtract, add, add, add;
+}
+
+.section-title {
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.section-title h1::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 140px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 70px);
+}
+
+.section-title h1::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #FCE300;
+    bottom: 0;
+    left: calc(50% - 20px);
 }
