@@ -1,6 +1,8 @@
 import React from 'react';
 import './main.css'
 
+// import azure from '../../assets/images/Azure_Button.png';
+
 const Loading = (e) => {
     e.preventDefault()
     var classe = e.currentTarget.classList
@@ -31,8 +33,10 @@ const Main = (props) => {
                                 <h1 className='mb-1'>Horizon Classwize</h1>
                             </div>
                             <div className='desc'>
-                                <p>Welcome to Classwize jump page. Click the button below to be taken to the login page for Classwize.</p>
-                                <p>Once on the login page, click the Azure button and login with your Horizon email account.</p>
+                                <p>Welcome to Classwize jump page. <span>Click the button below</span> to be taken to the login page for Classwize.</p>
+                                {/* <img src={azure} alt={azure} className="mt-2 azure-button" /> */}
+                                <p>Once on the login page, click the <span>Azure button</span> and login with your Horizon email account.</p>
+                                
                             </div>
                             <div className='button-cont'>
                                 <a href='https://classroom.au-1.familyzone.io/login/FQIhsyy3SK' className='btn btn-classwize px-3 py-2' onClick={Loading}>Login</a>

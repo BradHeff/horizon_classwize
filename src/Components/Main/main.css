@@ -11,7 +11,7 @@
 .info h3 span {
     color: #FCE300;
     text-shadow: 1px 1px 3px #000000;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .info h3 span.active {
@@ -29,15 +29,26 @@
 }
 
 .desc p {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
     margin-bottom: 5px;
+    font-family: 'Poppins';
 }
+
+.desc p>span {
+    font-weight: 600;
+    color: #FCE300;
+    text-decoration: underline;
+    font-family: 'Montserrat';
+}
+
 .btn.btn-classwize {
     background: #115740;
     border-color: #115740;
     color: #fff;
     border-radius: 20px;
+    outline: none;
+    box-shadow: none;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -51,19 +62,23 @@
     color: #fff;
 }
 
+.azure-button {
+    opacity: 0.8;
+}
+
 .panel {
-    background-color: rgba(255, 199, 44, 0.3);
+    background-color: rgba(10, 26, 11, 0.692);
     border: none;
     padding: 30px;
     padding-bottom: 60px;
     -webkit-mask-image: linear-gradient(to top, black 0%, black 100%), linear-gradient(to top, transparent 0%, black 100%), linear-gradient(to right, transparent 0%, black 100%), linear-gradient(to bottom, transparent 0%, black 100%), linear-gradient(to left, transparent 0%, black 100%);
     -webkit-mask-position: center, top, right, bottom, left;
-    -webkit-mask-size: 100% 100%, 100% 10px, 10px 100%, 100% 10px, 10px 100%;
+    -webkit-mask-size: 100% 100%, 100% 40px, 40px 100%, 100% 40px, 40px 100%;
     -webkit-mask-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     -webkit-mask-composite: source-out, source-over, source-over, source-over;
     mask-image: linear-gradient(to top, black 0%, black 100%), linear-gradient(to top, transparent 0%, black 100%), linear-gradient(to right, transparent 0%, black 100%), linear-gradient(to bottom, transparent 0%, black 100%), linear-gradient(to left, transparent 0%, black 100%);
     mask-position: center, top, right, bottom, left;
-    mask-size: 100% 100%, 100% 10px, 10px 100%, 100% 10px, 10px 100%;
+    mask-size: 100% 100%, 100% 40px, 40px 100%, 100% 40px, 40px 100%;
     mask-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     mask-composite: subtract, add, add, add;
 }
